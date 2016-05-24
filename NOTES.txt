@@ -1,0 +1,27 @@
+Mastering Unit Testing Using Mockito and JUnit
+
+Unit tests should follow principles:
+-order independent and isolated (test classes and test methods shouldn't depend on order or execution of other test).
+-trouble-free setup and run (unit tests should not require a DB connection or an Internet connection or a clean-up temp directory).
+-Effortless execution (unit tests should run fine on all computers, not just on a specific computer).
+-Formula 1 execution (a test should not take more than a secon to finish the execution).
+
+@Captor - creates ArgumentCaptor
+@Spy - creates spy
+@InjectMocks - injects mock or spy fields into the tested object automatically using a constructor injection,
+setter injection, or field injection.
+
+
+for measure real time execution use: JMH microbenchmarks (it worms JVM etc).
+
+Behavior-Driven Development in Plain Java
+http://jgiven.org/
+
+given().an_egg().
+    and().some_milk().
+    and().the_ingredient( "flour" );
+
+when().the_cook_mangles_everthing_to_a_dough().
+    and().the_cook_fries_the_dough_in_a_pan();
+
+then().the_resulting_meal_is_a_pan_cake();
