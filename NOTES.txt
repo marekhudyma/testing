@@ -11,7 +11,6 @@ Unit tests should follow principles:
 @InjectMocks - injects mock or spy fields into the tested object automatically using a constructor injection,
 setter injection, or field injection.
 
-
 for measure real time execution use: JMH microbenchmarks (it worms JVM etc).
 
 Behavior-Driven Development in Plain Java
@@ -25,3 +24,9 @@ when().the_cook_mangles_everthing_to_a_dough().
     and().the_cook_fries_the_dough_in_a_pan();
 
 then().the_resulting_meal_is_a_pan_cake();
+
+----------
+@Nullable - indicator that shows that variable/result of method can be null
+add everything where can be null, so it will show NPE in GUI
+
+@NotNull - only during validation. 
