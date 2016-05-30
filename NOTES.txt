@@ -30,3 +30,12 @@ then().the_resulting_meal_is_a_pan_cake();
 add everything where can be null, so it will show NPE in GUI
 
 @NotNull - only during validation. 
+
+
+TODO TRY
+private Instant mockCurrentTime(LocalDateTime now, ZoneOffset zoneOffset) {
+        Instant instant = now.toInstant(zoneOffset);
+        when(clock.instant()).thenReturn(instant);
+        return instant;
+    }
+Java 8 JDK
