@@ -8,7 +8,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 public class GuavaCheckTest {
 
     @Test
-    public void aaa() throws Exception {
+    public void testCheckNotNull() throws Exception {
         checkNotNull("aa", "someVariable is null");
         checkArgument(true, "someVariable doesn't fit");
     }
